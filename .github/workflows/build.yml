@@ -16,6 +16,9 @@ jobs:
           - dockerfile: ./metrics-server/Dockerfile
             image: easzlab/metrics-server
             tag: v0.5.2
+          - dockerfile: ./k8s-dns-node-cache/Dockerfile
+            image: easzlab/k8s-dns-node-cache
+            tag: 1.22.8
     permissions:
       contents: read
       packages: write
