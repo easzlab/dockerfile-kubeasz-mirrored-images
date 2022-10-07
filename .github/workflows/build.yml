@@ -29,6 +29,7 @@ jobs:
 #            image: easzlab/nfs-subdir-external-provisioner 
 #            tag: v4.0.2
           - dockerfile: ./json-mock/Dockerfile
+            ctx: ./json-mock/
             image: easzlab/json-mock
             tag: v1.3.0
     permissions:
@@ -60,7 +61,7 @@ jobs:
       - name: Build and push
         uses: docker/build-push-action@v3
         with:
-          context: .
+          context: ${{ matrix.ctx }}
           file: ${{ matrix.dockerfile }}
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
