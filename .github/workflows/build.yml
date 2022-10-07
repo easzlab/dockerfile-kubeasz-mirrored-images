@@ -10,15 +10,24 @@ jobs:
       fail-fast: false
       matrix:
         include:
-          - dockerfile: ./pause/Dockerfile
-            image: easzlab/pause
-            tag: 3.8
-          - dockerfile: ./metrics-server/Dockerfile
-            image: easzlab/metrics-server
-            tag: v0.5.2
-          - dockerfile: ./k8s-dns-node-cache/Dockerfile
-            image: easzlab/k8s-dns-node-cache
-            tag: 1.22.8
+#          - dockerfile: ./pause/Dockerfile
+#            image: easzlab/pause
+#            tag: 3.8
+#          - dockerfile: ./metrics-server/Dockerfile
+#            image: easzlab/metrics-server
+#            tag: v0.5.2
+#          - dockerfile: ./k8s-dns-node-cache/Dockerfile
+#            image: easzlab/k8s-dns-node-cache
+#            tag: 1.22.8
+          - dockerfile: ./nfs-subdir-external-provisioner/Dockerfile
+            image: easzlab/nfs-subdir-external-provisioner 
+            tag: v4.0.17
+          - dockerfile: ./kube-state-metrics/Dockerfile
+            image: easzlab/kube-state-metrics
+            tag: v2.5.0
+          - dockerfile: ./kube-webhook-certgen/Dockerfile
+            image: easzlab/kube-webhook-certgen
+            tag: v1.2.0
     permissions:
       contents: read
       packages: write
