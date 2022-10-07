@@ -25,9 +25,12 @@ jobs:
 #          - dockerfile: ./kube-webhook-certgen/Dockerfile
 #            image: easzlab/kube-webhook-certgen
 #            tag: v1.2.0
-          - dockerfile: ./nfs-subdir-external-provisioner/Dockerfile
-            image: easzlab/nfs-subdir-external-provisioner 
-            tag: v4.0.2
+#          - dockerfile: ./nfs-subdir-external-provisioner/Dockerfile
+#            image: easzlab/nfs-subdir-external-provisioner 
+#            tag: v4.0.2
+          - dockerfile: ./json-mock/Dockerfile
+            image: easzlab/json-mock
+            tag: v1.3.0
     permissions:
       contents: read
       packages: write
