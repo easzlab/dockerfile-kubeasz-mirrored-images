@@ -19,15 +19,15 @@ jobs:
 #          - dockerfile: ./k8s-dns-node-cache/Dockerfile
 #            image: easzlab/k8s-dns-node-cache
 #            tag: 1.22.8
+#          - dockerfile: ./kube-state-metrics/Dockerfile
+#            image: easzlab/kube-state-metrics
+#            tag: v2.5.0
+#          - dockerfile: ./kube-webhook-certgen/Dockerfile
+#            image: easzlab/kube-webhook-certgen
+#            tag: v1.2.0
           - dockerfile: ./nfs-subdir-external-provisioner/Dockerfile
             image: easzlab/nfs-subdir-external-provisioner 
-            tag: v4.0.17
-          - dockerfile: ./kube-state-metrics/Dockerfile
-            image: easzlab/kube-state-metrics
-            tag: v2.5.0
-          - dockerfile: ./kube-webhook-certgen/Dockerfile
-            image: easzlab/kube-webhook-certgen
-            tag: v1.2.0
+            tag: v4.0.2
     permissions:
       contents: read
       packages: write
