@@ -13,25 +13,35 @@ jobs:
 #          - dockerfile: ./pause/Dockerfile
 #            image: easzlab/pause
 #            tag: 3.8
+#            ctx: ./pause/
 #          - dockerfile: ./metrics-server/Dockerfile
 #            image: easzlab/metrics-server
 #            tag: v0.5.2
+#            ctx: ./metrics-server/
 #          - dockerfile: ./k8s-dns-node-cache/Dockerfile
 #            image: easzlab/k8s-dns-node-cache
 #            tag: 1.22.8
+#            ctx: ./k8s-dns-node-cache/
 #          - dockerfile: ./kube-state-metrics/Dockerfile
 #            image: easzlab/kube-state-metrics
 #            tag: v2.5.0
+#            ctx: ./kube-state-metrics/
 #          - dockerfile: ./kube-webhook-certgen/Dockerfile
 #            image: easzlab/kube-webhook-certgen
 #            tag: v1.2.0
+#            ctx: ./kube-webhook-certgen/
 #          - dockerfile: ./nfs-subdir-external-provisioner/Dockerfile
 #            image: easzlab/nfs-subdir-external-provisioner 
 #            tag: v4.0.2
+#            ctx: ./nfs-subdir-external-provisioner/
           - dockerfile: ./json-mock/Dockerfile
             ctx: ./json-mock/
             image: easzlab/json-mock
             tag: v1.3.0
+          - dockerfile: ./alpine-curl/Dockerfile
+            ctx: ./alpine-curl/
+            image: easzlab/alpine-curl
+            tag: v7.85.0
     permissions:
       contents: read
       packages: write
