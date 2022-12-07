@@ -34,14 +34,34 @@ jobs:
 #            image: easzlab/nfs-subdir-external-provisioner 
 #            tag: v4.0.2
 #            ctx: ./nfs-subdir-external-provisioner/
-          - dockerfile: ./json-mock/Dockerfile
-            ctx: ./json-mock/
-            image: easzlab/json-mock
-            tag: v1.3.0
-          - dockerfile: ./alpine-curl/Dockerfile
-            ctx: ./alpine-curl/
-            image: easzlab/alpine-curl
-            tag: v7.85.0
+#          - dockerfile: ./json-mock/Dockerfile
+#            ctx: ./json-mock/
+#            image: easzlab/json-mock
+#            tag: v1.3.0
+#          - dockerfile: ./alpine-curl/Dockerfile
+#            ctx: ./alpine-curl/
+#            image: easzlab/alpine-curl
+#            tag: v7.85.0
+          - dockerfile: ./kube-apiserver/Dockerfile
+            ctx: ./kube-apiserver/
+            image: easzlab/kube-apiserver
+            tag: v1.25.4
+          - dockerfile: ./kube-controller-manager/Dockerfile
+            ctx: ./kube-controller-manager/
+            image: easzlab/kube-controller-manager
+            tag: v1.25.4
+          - dockerfile: ./kube-scheduler/Dockerfile
+            ctx: ./kube-scheduler/
+            image: easzlab/kube-scheduler
+            tag: v1.25.4
+          - dockerfile: ./kube-proxy/Dockerfile
+            ctx: ./kube-proxy/
+            image: easzlab/kube-proxy
+            tag: v1.25.4
+          - dockerfile: ./etcd/Dockerfile
+            ctx: ./etcd/
+            image: easzlab/etcd
+            tag: 3.5.5-0
     permissions:
       contents: read
       packages: write
