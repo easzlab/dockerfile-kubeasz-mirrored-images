@@ -45,23 +45,19 @@ jobs:
           - dockerfile: ./kube-apiserver/Dockerfile
             ctx: ./kube-apiserver/
             image: easzlab/kube-apiserver
-            tag: v1.25.4
+            tag: v1.26.0
           - dockerfile: ./kube-controller-manager/Dockerfile
             ctx: ./kube-controller-manager/
             image: easzlab/kube-controller-manager
-            tag: v1.25.4
+            tag: v1.26.0
           - dockerfile: ./kube-scheduler/Dockerfile
             ctx: ./kube-scheduler/
             image: easzlab/kube-scheduler
-            tag: v1.25.4
+            tag: v1.26.0
           - dockerfile: ./kube-proxy/Dockerfile
             ctx: ./kube-proxy/
             image: easzlab/kube-proxy
-            tag: v1.25.4
-          - dockerfile: ./etcd/Dockerfile
-            ctx: ./etcd/
-            image: easzlab/etcd
-            tag: 3.5.5-0
+            tag: v1.26.0
     permissions:
       contents: read
       packages: write

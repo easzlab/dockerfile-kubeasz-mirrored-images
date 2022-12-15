@@ -1,3 +1,3 @@
-# mirror repo: easzlab/kube-proxy:v1.25.4
+# mirror repo: easzlab/kube-proxy:v1.26.0
 
-FROM registry.k8s.io/kube-proxy:v1.25.4 
+FROM registry.k8s.io/kube-proxy:v1.26.0
