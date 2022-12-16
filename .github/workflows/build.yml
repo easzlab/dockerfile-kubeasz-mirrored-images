@@ -10,10 +10,10 @@ jobs:
       fail-fast: false
       matrix:
         include:
-#          - dockerfile: ./pause/Dockerfile
-#            image: easzlab/pause
-#            tag: 3.8
-#            ctx: ./pause/
+          - dockerfile: ./pause/Dockerfile
+            image: easzlab/pause
+            tag: 3.9
+            ctx: ./pause/
 #          - dockerfile: ./metrics-server/Dockerfile
 #            image: easzlab/metrics-server
 #            tag: v0.5.2
@@ -42,22 +42,22 @@ jobs:
 #            ctx: ./alpine-curl/
 #            image: easzlab/alpine-curl
 #            tag: v7.85.0
-          - dockerfile: ./kube-apiserver/Dockerfile
-            ctx: ./kube-apiserver/
-            image: easzlab/kube-apiserver
-            tag: v1.26.0
-          - dockerfile: ./kube-controller-manager/Dockerfile
-            ctx: ./kube-controller-manager/
-            image: easzlab/kube-controller-manager
-            tag: v1.26.0
-          - dockerfile: ./kube-scheduler/Dockerfile
-            ctx: ./kube-scheduler/
-            image: easzlab/kube-scheduler
-            tag: v1.26.0
-          - dockerfile: ./kube-proxy/Dockerfile
-            ctx: ./kube-proxy/
-            image: easzlab/kube-proxy
-            tag: v1.26.0
+#          - dockerfile: ./kube-apiserver/Dockerfile
+#            ctx: ./kube-apiserver/
+#            image: easzlab/kube-apiserver
+#            tag: v1.26.0
+#          - dockerfile: ./kube-controller-manager/Dockerfile
+#            ctx: ./kube-controller-manager/
+#            image: easzlab/kube-controller-manager
+#            tag: v1.26.0
+#          - dockerfile: ./kube-scheduler/Dockerfile
+#            ctx: ./kube-scheduler/
+#            image: easzlab/kube-scheduler
+#            tag: v1.26.0
+#          - dockerfile: ./kube-proxy/Dockerfile
+#            ctx: ./kube-proxy/
+#            image: easzlab/kube-proxy
+#            tag: v1.26.0
     permissions:
       contents: read
       packages: write
