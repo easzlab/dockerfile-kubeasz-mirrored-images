@@ -10,18 +10,18 @@ jobs:
       fail-fast: false
       matrix:
         include:
-          - dockerfile: ./pause/Dockerfile
-            image: easzlab/pause
-            tag: 3.9
-            ctx: ./pause/
+#          - dockerfile: ./pause/Dockerfile
+#            image: easzlab/pause
+#            tag: 3.9
+#            ctx: ./pause/
 #          - dockerfile: ./metrics-server/Dockerfile
 #            image: easzlab/metrics-server
 #            tag: v0.5.2
 #            ctx: ./metrics-server/
-#          - dockerfile: ./k8s-dns-node-cache/Dockerfile
-#            image: easzlab/k8s-dns-node-cache
-#            tag: 1.22.8
-#            ctx: ./k8s-dns-node-cache/
+          - dockerfile: ./k8s-dns-node-cache/Dockerfile
+            image: easzlab/k8s-dns-node-cache
+            tag: 1.22.13
+            ctx: ./k8s-dns-node-cache/
 #          - dockerfile: ./kube-state-metrics/Dockerfile
 #            image: easzlab/kube-state-metrics
 #            tag: v2.5.0
