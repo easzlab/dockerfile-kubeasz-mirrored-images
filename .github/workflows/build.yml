@@ -14,18 +14,18 @@ jobs:
 #            image: easzlab/pause
 #            tag: 3.9
 #            ctx: ./pause/
-          - dockerfile: ./metrics-server/Dockerfile
-            image: easzlab/metrics-server
-            tag: v0.6.3
-            ctx: ./metrics-server/
-#          - dockerfile: ./k8s-dns-node-cache/Dockerfile
-#            image: easzlab/k8s-dns-node-cache
-#            tag: 1.22.13
-#            ctx: ./k8s-dns-node-cache/
-#          - dockerfile: ./harbor-offline/Dockerfile
-#            image: easzlab/harbor-offline
-#            tag: v2.6.3
-#            ctx: ./harbor-offline/
+#          - dockerfile: ./metrics-server/Dockerfile
+#            image: easzlab/metrics-server
+#            tag: v0.6.3
+#            ctx: ./metrics-server/
+          - dockerfile: ./k8s-dns-node-cache/Dockerfile
+            image: easzlab/k8s-dns-node-cache
+            tag: 1.22.20
+            ctx: ./k8s-dns-node-cache/
+          - dockerfile: ./harbor-offline/Dockerfile
+            image: easzlab/harbor-offline
+            tag: v2.6.4
+            ctx: ./harbor-offline/
 #          - dockerfile: ./kube-state-metrics/Dockerfile
 #            image: easzlab/kube-state-metrics
 #            tag: v2.5.0
@@ -38,10 +38,10 @@ jobs:
 #            image: easzlab/ingress-nginx-controller
 #            tag: v1.5.1
 #            ctx: ./ingress-nginx-controller/
-#          - dockerfile: ./nfs-subdir-external-provisioner/Dockerfile
-#            image: easzlab/nfs-subdir-external-provisioner 
-#            tag: v4.0.2
-#            ctx: ./nfs-subdir-external-provisioner/
+          - dockerfile: ./nfs-subdir-external-provisioner/Dockerfile
+            image: easzlab/nfs-subdir-external-provisioner 
+            tag: v4.0.18
+            ctx: ./nfs-subdir-external-provisioner/
 #          - dockerfile: ./json-mock/Dockerfile
 #            ctx: ./json-mock/
 #            image: easzlab/json-mock

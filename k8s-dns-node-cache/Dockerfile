@@ -1,1 +1,1 @@
-FROM k8s.gcr.io/dns/k8s-dns-node-cache:1.22.13
+FROM registry.k8s.io/dns/k8s-dns-node-cache:1.22.20
