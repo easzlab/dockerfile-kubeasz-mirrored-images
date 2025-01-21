@@ -24,7 +24,7 @@ jobs:
 #            ctx: ./k8s-dns-node-cache/
           - dockerfile: ./harbor-offline/Dockerfile
             image: easzlab/harbor-offline
-            tag: v2.11.1
+            tag: v2.12.2
             ctx: ./harbor-offline/
 #          - dockerfile: ./kube-state-metrics/Dockerfile
 #            image: easzlab/kube-state-metrics
