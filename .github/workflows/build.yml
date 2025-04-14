@@ -12,7 +12,7 @@ jobs:
         include:
           - dockerfile: ./pause/Dockerfile
             image: easzlab/pause
-            tag: 3.10
+            tag: '3.10'
             ctx: ./pause/
 #          - dockerfile: ./metrics-server/Dockerfile
 #            image: easzlab/metrics-server
