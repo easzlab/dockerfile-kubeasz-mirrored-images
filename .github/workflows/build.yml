@@ -18,14 +18,14 @@ jobs:
 #            image: easzlab/metrics-server
 #            tag: v0.7.2
 #            ctx: ./metrics-server/
-          - dockerfile: ./k8s-dns-node-cache/Dockerfile
-            image: easzlab/k8s-dns-node-cache
-            tag: 1.25.0
-            ctx: ./k8s-dns-node-cache/
-#          - dockerfile: ./harbor-offline/Dockerfile
-#            image: easzlab/harbor-offline
-#            tag: v2.12.2
-#            ctx: ./harbor-offline/
+#          - dockerfile: ./k8s-dns-node-cache/Dockerfile
+#            image: easzlab/k8s-dns-node-cache
+#            tag: 1.25.0
+#            ctx: ./k8s-dns-node-cache/
+          - dockerfile: ./harbor-offline/Dockerfile
+            image: easzlab/harbor-offline
+            tag: v2.12.4
+            ctx: ./harbor-offline/
 #          - dockerfile: ./snapshot-controller/Dockerfile
 #            image: easzlab/snapshot-controller
 #            tag: v8.2.1
