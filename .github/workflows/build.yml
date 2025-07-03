@@ -22,10 +22,10 @@ jobs:
 #            image: easzlab/k8s-dns-node-cache
 #            tag: 1.25.0
 #            ctx: ./k8s-dns-node-cache/
-          - dockerfile: ./harbor-offline/Dockerfile
-            image: easzlab/harbor-offline
-            tag: v2.12.4
-            ctx: ./harbor-offline/
+#          - dockerfile: ./harbor-offline/Dockerfile
+#            image: easzlab/harbor-offline
+#            tag: v2.12.4
+#            ctx: ./harbor-offline/
 #          - dockerfile: ./snapshot-controller/Dockerfile
 #            image: easzlab/snapshot-controller
 #            tag: v8.2.1
@@ -34,10 +34,10 @@ jobs:
 #            image: easzlab/kube-state-metrics
 #            tag: v2.8.2
 #            ctx: ./kube-state-metrics/
-#          - dockerfile: ./kube-webhook-certgen/Dockerfile
-#            image: easzlab/kube-webhook-certgen
-#            tag: v1.5.1 
-#            ctx: ./kube-webhook-certgen/
+          - dockerfile: ./kube-webhook-certgen/Dockerfile
+            image: easzlab/kube-webhook-certgen
+            tag: v1.6.0
+            ctx: ./kube-webhook-certgen/
 #          - dockerfile: ./ingress-nginx-controller/Dockerfile
 #            image: easzlab/ingress-nginx-controller
 #            tag: v1.5.1
