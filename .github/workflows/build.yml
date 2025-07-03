@@ -30,14 +30,14 @@ jobs:
 #            image: easzlab/snapshot-controller
 #            tag: v8.2.1
 #            ctx: ./snapshot-controller/
-#          - dockerfile: ./kube-state-metrics/Dockerfile
-#            image: easzlab/kube-state-metrics
-#            tag: v2.8.2
-#            ctx: ./kube-state-metrics/
-          - dockerfile: ./kube-webhook-certgen/Dockerfile
-            image: easzlab/kube-webhook-certgen
-            tag: v1.6.0
-            ctx: ./kube-webhook-certgen/
+          - dockerfile: ./kube-state-metrics/Dockerfile
+            image: easzlab/kube-state-metrics
+            tag: v2.16.0
+            ctx: ./kube-state-metrics/
+#          - dockerfile: ./kube-webhook-certgen/Dockerfile
+#            image: easzlab/kube-webhook-certgen
+#            tag: v1.6.0
+#            ctx: ./kube-webhook-certgen/
 #          - dockerfile: ./ingress-nginx-controller/Dockerfile
 #            image: easzlab/ingress-nginx-controller
 #            tag: v1.5.1
