@@ -32,7 +32,7 @@ jobs:
 #            ctx: ./snapshot-controller/
           - dockerfile: ./kube-state-metrics/Dockerfile
             image: easzlab/kube-state-metrics
-            tag: v2.16.0
+            tag: v2.15.0
             ctx: ./kube-state-metrics/
 #          - dockerfile: ./kube-webhook-certgen/Dockerfile
 #            image: easzlab/kube-webhook-certgen
