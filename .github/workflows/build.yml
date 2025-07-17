@@ -26,14 +26,10 @@ jobs:
 #            image: easzlab/harbor-offline
 #            tag: v2.12.4
 #            ctx: ./harbor-offline/
-#          - dockerfile: ./snapshot-controller/Dockerfile
-#            image: easzlab/snapshot-controller
-#            tag: v8.2.1
-#            ctx: ./snapshot-controller/
-          - dockerfile: ./kube-state-metrics/Dockerfile
-            image: easzlab/kube-state-metrics
-            tag: v2.15.0
-            ctx: ./kube-state-metrics/
+#          - dockerfile: ./kube-state-metrics/Dockerfile
+#            image: easzlab/kube-state-metrics
+#            tag: v2.15.0
+#            ctx: ./kube-state-metrics/
 #          - dockerfile: ./kube-webhook-certgen/Dockerfile
 #            image: easzlab/kube-webhook-certgen
 #            tag: v1.6.0
@@ -70,6 +66,26 @@ jobs:
 #            ctx: ./kube-proxy/
 #            image: easzlab/kube-proxy
 #            tag: v1.26.0
+          - dockerfile: ./snapshot-controller/Dockerfile
+            image: easzlab/snapshot-controller
+            tag: v7.0.0
+            ctx: ./snapshot-controller/
+          - dockerfile: ./csi-node-driver-registrar/Dockerfile
+            image: easzlab/csi-node-driver-registrar
+            tag: v2.13.0
+            ctx: ./csi-node-driver-registrar/
+          - dockerfile: ./csi-provisioner/Dockerfile
+            image: easzlab/csi-provisioner
+            tag: v5.2.0
+            ctx: ./csi-provisioner/
+          - dockerfile: ./csi-resizer/Dockerfile
+            image: easzlab/csi-resizer
+            tag: v1.11.2
+            ctx: ./csi-resizer/
+          - dockerfile: ./csi-snapshotter/Dockerfile
+            image: easzlab/csi-snapshotter
+            tag: v7.0.0
+            ctx: ./csi-snapshotter/
     permissions:
       contents: read
       packages: write
