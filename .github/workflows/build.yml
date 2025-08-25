@@ -34,10 +34,10 @@ jobs:
 #            image: easzlab/kube-webhook-certgen
 #            tag: v1.6.0
 #            ctx: ./kube-webhook-certgen/
-          - dockerfile: ./ingress-nginx-controller/Dockerfile
-            image: easzlab/ingress-nginx-controller
-            tag: v1.13.0
-            ctx: ./ingress-nginx-controller/
+#          - dockerfile: ./ingress-nginx-controller/Dockerfile
+#            image: easzlab/ingress-nginx-controller
+#            tag: v1.13.0
+#            ctx: ./ingress-nginx-controller/
 #          - dockerfile: ./nfs-subdir-external-provisioner/Dockerfile
 #            image: easzlab/nfs-subdir-external-provisioner 
 #            tag: v4.0.18
@@ -66,10 +66,10 @@ jobs:
 #            ctx: ./kube-proxy/
 #            image: easzlab/kube-proxy
 #            tag: v1.26.0
-#          - dockerfile: ./snapshot-controller/Dockerfile
-#            image: easzlab/snapshot-controller
-#            tag: v7.0.0
-#            ctx: ./snapshot-controller/
+          - dockerfile: ./snapshot-controller/Dockerfile
+            image: easzlab/snapshot-controller
+            tag: v8.3.0
+            ctx: ./snapshot-controller/
 #          - dockerfile: ./csi-node-driver-registrar/Dockerfile
 #            image: easzlab/csi-node-driver-registrar
 #            tag: v2.13.0
