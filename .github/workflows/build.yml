@@ -14,14 +14,14 @@ jobs:
 #            image: easzlab/pause
 #            tag: '3.10'
 #            ctx: ./pause/
-#          - dockerfile: ./metrics-server/Dockerfile
-#            image: easzlab/metrics-server
-#            tag: v0.7.2
-#            ctx: ./metrics-server/
-#          - dockerfile: ./k8s-dns-node-cache/Dockerfile
-#            image: easzlab/k8s-dns-node-cache
-#            tag: 1.25.0
-#            ctx: ./k8s-dns-node-cache/
+          - dockerfile: ./metrics-server/Dockerfile
+            image: easzlab/metrics-server
+            tag: v0.8.0
+            ctx: ./metrics-server/
+          - dockerfile: ./k8s-dns-node-cache/Dockerfile
+            image: easzlab/k8s-dns-node-cache
+            tag: 1.26.4
+            ctx: ./k8s-dns-node-cache/
 #          - dockerfile: ./harbor-offline/Dockerfile
 #            image: easzlab/harbor-offline
 #            tag: v2.12.4
@@ -66,10 +66,10 @@ jobs:
 #            ctx: ./kube-proxy/
 #            image: easzlab/kube-proxy
 #            tag: v1.26.0
-          - dockerfile: ./snapshot-controller/Dockerfile
-            image: easzlab/snapshot-controller
-            tag: v8.3.0
-            ctx: ./snapshot-controller/
+#          - dockerfile: ./snapshot-controller/Dockerfile
+#            image: easzlab/snapshot-controller
+#            tag: v8.3.0
+#            ctx: ./snapshot-controller/
 #          - dockerfile: ./csi-node-driver-registrar/Dockerfile
 #            image: easzlab/csi-node-driver-registrar
 #            tag: v2.13.0
