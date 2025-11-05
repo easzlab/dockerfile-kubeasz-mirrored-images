@@ -14,18 +14,18 @@ jobs:
 #            image: easzlab/pause
 #            tag: '3.10'
 #            ctx: ./pause/
-          - dockerfile: ./metrics-server/Dockerfile
-            image: easzlab/metrics-server
-            tag: v0.8.0
-            ctx: ./metrics-server/
-          - dockerfile: ./k8s-dns-node-cache/Dockerfile
-            image: easzlab/k8s-dns-node-cache
-            tag: 1.26.4
-            ctx: ./k8s-dns-node-cache/
-#          - dockerfile: ./harbor-offline/Dockerfile
-#            image: easzlab/harbor-offline
-#            tag: v2.12.4
-#            ctx: ./harbor-offline/
+#          - dockerfile: ./metrics-server/Dockerfile
+#            image: easzlab/metrics-server
+#            tag: v0.8.0
+#            ctx: ./metrics-server/
+#          - dockerfile: ./k8s-dns-node-cache/Dockerfile
+#            image: easzlab/k8s-dns-node-cache
+#            tag: 1.26.4
+#            ctx: ./k8s-dns-node-cache/
+          - dockerfile: ./harbor-offline/Dockerfile
+            image: easzlab/harbor-offline
+            tag: v2.12.4
+            ctx: ./harbor-offline/
 #          - dockerfile: ./kube-state-metrics/Dockerfile
 #            image: easzlab/kube-state-metrics
 #            tag: v2.15.0
