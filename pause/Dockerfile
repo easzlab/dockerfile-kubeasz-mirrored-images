@@ -1,3 +1,3 @@
 # mirror repo: easzlab/pause
 
-FROM registry.k8s.io/pause:3.10
+FROM registry.k8s.io/pause:3.10.2
