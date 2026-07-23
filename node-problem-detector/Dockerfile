@@ -1,0 +1,2 @@
+# easzlab/node-problem-detector
+FROM registry.k8s.io/node-problem-detector/node-problem-detector:v1.35.3
