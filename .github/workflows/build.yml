@@ -10,10 +10,10 @@ jobs:
       fail-fast: false
       matrix:
         include:
-          - dockerfile: ./node-problem-detector/Dockerfile
-            image: easzlab/node-problem-detector
-            tag: 'v1.35.3'
-            ctx: ./node-problem-detector/
+#          - dockerfile: ./node-problem-detector/Dockerfile
+#            image: easzlab/node-problem-detector
+#            tag: 'v1.35.3'
+#            ctx: ./node-problem-detector/
 #          - dockerfile: ./pause/Dockerfile
 #            image: easzlab/pause
 #            tag: '3.10.2'
@@ -62,14 +62,14 @@ jobs:
 #            image: easzlab/csi-node-driver-registrar
 #            tag: v2.13.0
 #            ctx: ./csi-node-driver-registrar/
-#          - dockerfile: ./csi-provisioner/Dockerfile
-#            image: easzlab/csi-provisioner
-#            tag: v5.2.0
-#            ctx: ./csi-provisioner/
-#          - dockerfile: ./csi-resizer/Dockerfile
-#            image: easzlab/csi-resizer
-#            tag: v1.11.2
-#            ctx: ./csi-resizer/
+          - dockerfile: ./csi-provisioner/Dockerfile
+            image: easzlab/csi-provisioner
+            tag: v6.1.0
+            ctx: ./csi-provisioner/
+          - dockerfile: ./csi-resizer/Dockerfile
+            image: easzlab/csi-resizer
+            tag: v2.0.0
+            ctx: ./csi-resizer/
 #          - dockerfile: ./csi-snapshotter/Dockerfile
 #            image: easzlab/csi-snapshotter
 #            tag: v7.0.0
