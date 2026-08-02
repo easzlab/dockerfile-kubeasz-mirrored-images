@@ -54,22 +54,22 @@ jobs:
 #            ctx: ./alpine-curl/
 #            image: easzlab/alpine-curl
 #            tag: v7.85.0
-#          - dockerfile: ./snapshot-controller/Dockerfile
-#            image: easzlab/snapshot-controller
-#            tag: v8.3.0
-#            ctx: ./snapshot-controller/
+          - dockerfile: ./snapshot-controller/Dockerfile
+            image: easzlab/snapshot-controller
+            tag: v8.6.0
+            ctx: ./snapshot-controller/
 #          - dockerfile: ./csi-node-driver-registrar/Dockerfile
 #            image: easzlab/csi-node-driver-registrar
 #            tag: v2.13.0
 #            ctx: ./csi-node-driver-registrar/
-          - dockerfile: ./csi-provisioner/Dockerfile
-            image: easzlab/csi-provisioner
-            tag: v6.1.0
-            ctx: ./csi-provisioner/
-          - dockerfile: ./csi-resizer/Dockerfile
-            image: easzlab/csi-resizer
-            tag: v2.0.0
-            ctx: ./csi-resizer/
+#          - dockerfile: ./csi-provisioner/Dockerfile
+#            image: easzlab/csi-provisioner
+#            tag: v6.1.0
+#            ctx: ./csi-provisioner/
+#          - dockerfile: ./csi-resizer/Dockerfile
+#            image: easzlab/csi-resizer
+#            tag: v2.0.0
+#            ctx: ./csi-resizer/
 #          - dockerfile: ./csi-snapshotter/Dockerfile
 #            image: easzlab/csi-snapshotter
 #            tag: v7.0.0
