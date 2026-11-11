@@ -1,9 +1,9 @@
 # Download harbor offline-package needed by 'kubeasz'
 #
 
-FROM alpine:3.16
+FROM alpine:3.22
 
-ENV HARBOR_VER=v2.12.4
+ENV HARBOR_VER=v2.14.6
 
 RUN wget https://github.com/goharbor/harbor/releases/download/${HARBOR_VER}/harbor-offline-installer-${HARBOR_VER}.tgz
 
