@@ -18,10 +18,10 @@ jobs:
 #            image: easzlab/pause
 #            tag: '3.10.2'
 #            ctx: ./pause/
-          - dockerfile: ./metrics-server/Dockerfile
-            image: easzlab/metrics-server
-            tag: v0.9.1
-            ctx: ./metrics-server/
+#          - dockerfile: ./metrics-server/Dockerfile
+#            image: easzlab/metrics-server
+#            tag: v0.9.1
+#            ctx: ./metrics-server/
 #          - dockerfile: ./k8s-dns-node-cache/Dockerfile
 #            image: easzlab/k8s-dns-node-cache
 #            tag: 1.26.8
@@ -54,26 +54,26 @@ jobs:
 #            ctx: ./alpine-curl/
 #            image: easzlab/alpine-curl
 #            tag: v7.85.0
-#          - dockerfile: ./snapshot-controller/Dockerfile
-#            image: easzlab/snapshot-controller
-#            tag: v8.6.0
-#            ctx: ./snapshot-controller/
-#          - dockerfile: ./csi-node-driver-registrar/Dockerfile
-#            image: easzlab/csi-node-driver-registrar
-#            tag: v2.13.0
-#            ctx: ./csi-node-driver-registrar/
-#          - dockerfile: ./csi-provisioner/Dockerfile
-#            image: easzlab/csi-provisioner
-#            tag: v6.1.0
-#            ctx: ./csi-provisioner/
-#          - dockerfile: ./csi-resizer/Dockerfile
-#            image: easzlab/csi-resizer
-#            tag: v2.0.0
-#            ctx: ./csi-resizer/
-#          - dockerfile: ./csi-snapshotter/Dockerfile
-#            image: easzlab/csi-snapshotter
-#            tag: v7.0.0
-#            ctx: ./csi-snapshotter/
+          - dockerfile: ./snapshot-controller/Dockerfile
+            image: easzlab/snapshot-controller
+            tag: v8.2.0
+            ctx: ./snapshot-controller/
+          - dockerfile: ./csi-node-driver-registrar/Dockerfile
+            image: easzlab/csi-node-driver-registrar
+            tag: v2.13.0
+            ctx: ./csi-node-driver-registrar/
+          - dockerfile: ./csi-provisioner/Dockerfile
+            image: easzlab/csi-provisioner
+            tag: v6.1.0
+            ctx: ./csi-provisioner/
+          - dockerfile: ./csi-resizer/Dockerfile
+            image: easzlab/csi-resizer
+            tag: v2.0.0
+            ctx: ./csi-resizer/
+          - dockerfile: ./csi-snapshotter/Dockerfile
+            image: easzlab/csi-snapshotter
+            tag: v8.2.0
+            ctx: ./csi-snapshotter/
     permissions:
       contents: read
       packages: write
